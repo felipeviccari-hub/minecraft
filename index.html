@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Minecraft Otimizado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Menu inicial -->
+  <div id="menu">
+    <h1>MEU MINECRAFT</h1>
+    <p>Um mundo de blocos em 3D</p>
+    <div class="controls">
+      WASD = andar | Espaço = pular<br>
+      Mouse = olhar | ESC = pausar/menu<br>
+      Clique esquerdo = quebrar | Clique direito = colocar
+    </div>
+    <button id="start">JOGAR</button>
+  </div>
+
+  <!-- Mira -->
+  <div id="crosshair">+</div>
+
+  <!-- Informações -->
+  <div id="info">
+    <strong>CONTROLES</strong><br>
+    WASD — Mover<br>
+    Espaço — Pular<br>
+    ESC — Menu / Soltar Mouse<br>
+    🖱️ Esquerdo — Quebrar<br>
+    🖱️ Direito — Colocar<br>
+    1–5 — Escolher bloco
+  </div>
+
+  <!-- Barra de blocos -->
+  <div id="hotbar">
+    <div class="slot grass selected" data-block="grass"><span>1</span></div>
+    <div class="slot dirt" data-block="dirt"><span>2</span></div>
+    <div class="slot stone" data-block="stone"><span>3</span></div>
+    <div class="slot wood" data-block="wood"><span>4</span></div>
+    <div class="slot leaves" data-block="leaves"><span>5</span></div>
+  </div>
+
+  <!-- Three.js -->
+  <script type="module" src="script.js"></script>
+
+</body>
+</html>
